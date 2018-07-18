@@ -11,8 +11,8 @@ Okay, download the data.pcap, just take a click on it. Dont be afraid, I'm here 
 Beside, there is a unix shell, you may use it, but I don't in this problem. just explore it and you'll find nothing. tsumaranai desu nee.
 
 1. The first step to exploit the data.pcap, is to open the file. I use wireshark
-2. To obtain the password, just thinking about a big picture of a website, and you need a login to enter it.
-   Whatever is it, I'mm thinking about username and password
+2. To obtain the password, just thinking about a big picture of a website, and you need a login to enter it to gain access for the router.
+   Whatever is it, I'm thinking about username and password
 3. Then, to simplify, in the filter box above, search for HTTP
 4. Take a look in the Hypertext Transfer Protocol section in the middle, I mean, it's what we're searching for the password. 
 5. Then there is a bar with no, time, source, destination, protocol, length, and info. Take a look on this, specifically on info.
@@ -50,5 +50,5 @@ Beside, there is a unix shell, you may use it, but I don't in this problem. just
   
   R6AKNhWwo7
   
-  enter it at the flag submit section and it's done
+  enter it at the flag submit section and it's done. Look, no coding at all
    
