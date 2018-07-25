@@ -1,4 +1,5 @@
 almost easy, just encode that, as said, its only substitute a character with another character.
+read this one https://en.wikipedia.org/wiki/Substitution_cipher
 
 search it online, substitute cipher solver, and you got the flag
 
