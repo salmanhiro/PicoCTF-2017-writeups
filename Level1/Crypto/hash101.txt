@@ -56,15 +56,42 @@ hex>
 ----------- LEVEL 3: Hashing Function ------------
 A Hashing Function intakes any data of any size and irreversibly transforms it to a fixed length number. For example, a simple Hashing Function could be to add up the sum of all the values of all the bytes in the data and get the remainder after dividing by 16 (modulus 16)
 
-TO UNLOCK NEXT LEVEL, give me a string that will result in a 0 after being transformed with the mentioned example hashing function
+TO UNLOCK NEXT LEVEL, give me a string that will result in a 12 after being transformed with the mentioned example hashing function
 
-9. okay, I will explain the hashing function. this is my research at college, and it's fun.
+
+9. okay, I will explain the hashing function. this is my research at college, and it's fun. Hashing function is somewhat a character represent a value, and if the value summed up, and divided by an integer, resulted in remainder, but in reverse, we know the remainder and search for the possible character (represent value). 
+
+for more information, I got a good good explanation from CMU : https://www.cs.cmu.edu/~adamchik/15-121/lectures/Hashing/hashing.html
 
 first there're some values assigned, it's the ASCII represented in decimal, hexadecimal, and octal.
 
 look here https://www.asciitable.com/
 
+10. then, look at the problem. the hash value entered moduled by 16, giving the remainder 11. search for a words (actually just some random character if you want). there's many possible answer. I suggest you to use calculator.
+
+*tips : what values divided by 16, remain 11. just determine the hash value first. I choose 332 for no reason haha (because the alphabetic a-z has the value ranged from 97-122, so i choose the combination of it). 
+
+then determine how 331 be formed from those character, I choose "pnm" which represent (in decimals):
+
+p = 112
+n = 110
+m = 109
+
+summed all, got 311. alright proceed to the next level
+
+11. there's the real hash. the description simply explain it. 
+
+--------------- LEVEL 4: Real Hash ---------------
+A real Hashing Function is used for many things. This can include checking to ensure a file has not been changed (its hash value would change if any part of it is changed). An important use of hashes is for storing passwords because a Hashing Function cannot be reversed to find the initial data. Therefore if someone steals the hashes, they must try many different inputs to see if they can "crack" it to find what password yields the same hash. Normally, this is too much work (if the password is long enough). But many times, people's passwords are easy to guess... Brute forcing this hash yourself is not a good idea, but there is a strong possibility that, if the password is weak, this hash has been cracked by someone before. Try looking for websites that have stored already cracked hashes.
+
+TO CLAIM YOUR PRIZE, give me the string password that will result in this MD5 hash (MD5, like most hashes, are represented as hex digits):
+8922517b07c071e5dd9dd4932f6a3429
 
 
+I use the md5 crack website, i found it there: https://crackstation.net/
 
+(forgive my weakness)
 
+you got it resulted in "m4rch" 
+
+12. here you go, you got the final flag. just copy it.
