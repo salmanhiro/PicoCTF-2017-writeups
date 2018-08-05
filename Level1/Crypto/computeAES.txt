@@ -1,0 +1,23 @@
+see the description, there're 
+
+You found this clue laying around. Can you decrypt it?
+
+and hints : 
+Try online tools or python
+
+
+wow, you found these:
+Encrypted with AES in ECB mode. All values base64 encoded
+ciphertext = V3Vqirostg6qW26sle5mnyrwEYSrteN6oHkilO50e9dFkN+0JhC3yu0LcQNw/hXU
+key = r7y1dhmTvjQrcra7A1UQFw==
+
+take a look that the value is on base64 encode. 
+
+1. before that, convert those base64 to hex.
+
+2. you got the hex, use the online aes converter, insert the text and keys (sadly I fail on the current online converter found)
+   I found the tutorial from John Hammond to generate it using python. just try it, note that you can't rely on internet forever.
+    
+    https://www.youtube.com/watch?v=sR29bTAD_2o
+
+3. follow it and you'll got the flag
